@@ -1,0 +1,131 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  .divider {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 3rem 0;
+  }
+  .llbtn {
+    font-size: 1.02rem;
+  }
+  .lnav {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0.2px 4px rgb(197, 197, 197);
+    position: fixed;
+    top: 0;
+    z-index: 998;
+  }
+  .lbrand {
+    color:black;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .spacing-nav {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+  }
+  .lbody {
+    padding: 1 1rem;
+  }
+  .limg {
+    margin-top: -10px;
+  }
+  .lpar {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .ltext {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 10px 20px 10px 20px;
+  }
+  .juknis {
+  width: 100%;
+  background-color: #ffd700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 150px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+.juknis:hover {
+  background-color: #c0ad04 !important;
+}
+.juknis > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.juknis-btn-section > .col-6 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.kepka {
+  width: 100%;
+  background-color: #f92626;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 150px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+.kepka:hover {
+  background-color: #892020 !important;
+}
+.kepka > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.kepka-btn-section > .col-6 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.pergub {
+  width: 100%;
+  background-color: #1e90ff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+.pergub > h4 {
+  font-weight: bold;
+}
+.pergub:hover {
+  background-color: #0065ca !important;
+}
+.perka {
+  width: 100%;
+  background-color: #ff9900;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+.perka > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.perka:hover {
+  background-color: #cb6c18 !important;
+}
+
+  @media (min-width: 576px) { 
+    .lpar {
+        font-weight: 600;
+        font-size: 1.8rem;
+      }
+   }
+   
