@@ -3,6 +3,8 @@
   }
   .card {
     border: 1.5px solid rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    height: fixed;
   } 
   .divider {
     width: 100%;
@@ -130,5 +132,26 @@
         font-weight: 600;
         font-size: 1.8rem;
       }
+    .card {
+      border: 1.5px solid rgba(0, 0, 0, 0.4);
+      margin-top: 20px;
+       height: 35rem;
+      } 
    }
+   @media (min-width: 1200px) { 
+    .butt {
+      margin-top: 97px;
+    }
+    .butt2 {
+      margin-top: 50px;
+    }
+    }
+   @media (min-width: 1400px) { 
+    .butt {
+      margin-top: 105px;
+    }
+    .butt2 {
+      margin-top: 83px;
+    }
+    }
    
