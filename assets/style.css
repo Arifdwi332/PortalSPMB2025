@@ -23,10 +23,13 @@
     top: 0;
     z-index: 998;
   }
+  .lhead {
+    margin-left: -10px;
+  }
   .lbrand {
     color:black;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .spacing-nav {
     width: 100%;
@@ -132,10 +135,18 @@
         font-weight: 600;
         font-size: 1.8rem;
       }
+    .lbrand {
+      color:black;
+      font-weight: 700;
+      font-size: 1.8rem;
+      }
     .card {
       border: 1.5px solid rgba(0, 0, 0, 0.4);
       margin-top: 20px;
        height: 35rem;
+      }
+    .lhead {
+        margin-left: 0px;
       } 
    }
    @media (min-width: 1200px) { 
