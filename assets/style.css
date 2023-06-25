@@ -21,7 +21,6 @@
     box-shadow: 0 0.2px 4px rgb(197, 197, 197);
     position: fixed;
     top: 0;
-    z-index: 998;
   }
   .lhead {
     margin-left: -10px;
@@ -129,6 +128,16 @@
 }
 .perka:hover {
   background-color: #cb6c18 !important;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Nilai alpha (0.5) dapat disesuaikan untuk transparansi yang diinginkan */
+  z-index: 1; /* Pastikan nilai z-index lebih tinggi dari pop-up modal */
+  display: none;
 }
 
   @media (min-width: 576px) { 

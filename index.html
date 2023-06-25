@@ -9,6 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+    <script>
+      window.onload = function() {
+        var modal = document.getElementById("myModal");
+        var overlay = document.getElementById("overlay");
+        var closeButton = document.getElementById("closeButton");
+    
+        closeButton.addEventListener("click", function() {
+          modal.style.display = "none";
+          overlay.style.display = "none";
+        });
+    
+        modal.style.display = "block";
+        overlay.style.display = "block";
+      };
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZVVJ880B5"></script>
     <script>
@@ -22,6 +38,7 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -45,9 +62,34 @@
       </div>
     </nav>
     <!-- end navbar -->
-
+ 
     <div class="spacing-nav"></div>
-    
+
+    <!-- Modal -->
+    <div class="modal" id="myModal" tabindex="3" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="myModalLabel">Penting!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeButton"></button>
+          </div>
+          <div class="modal-body m-1">
+            <p>Daftar Ulang dilaksanakan pada tanggal <b>26-27 Juni</b> dan <b>1 Juli</b> di masing-masing SMA SMK NEGERI. 
+              Siswa membawa berkas lengkap dan mengisi Surat Pernyataan yang sudah disiapkan oleh sekolah.
+            </p>
+            <hr>
+            <h5>TAHAP PEMENUHAN DAYA TAMPUNG</h5>
+            <p>Dilaksanakan pada tanggal <b>3-4 Juli</b> secara online di laman <span><a href="http://yogyaprov.siap-ppdb.com" target="_blank" class="fw-bold" style="text-decoration: none;">SELEKSI PPDB ONLINE.</a></span> <br>
+              Tahap ini khusus bagi siswa yang sudah mengikuti PPDB Online pada tanggal 19-23 Juni namun belum diterima di SMA SMK NEGERI. <br>
+              Siswa yang <b>sudah diterima</b> pada PPDB Online <b>tidak dapat</b> mengikuti Tahap Pemenuhan Daya Tampung, meskipun tidak melakukan daftar ulang. <br>
+              Siswa peserta tahap ini wajib unduh Surat Pernyataan di halaman Login siswa masing-masing dan diunggah saat Tahap Pemenuhan Daya Tampung ini dibuka.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
     <!-- content -->
     <div class="container mt-5">
       <div class="row">
@@ -60,13 +102,14 @@
           <a href="http://verifikasi-ppdb.jogjaprov.go.id/landing/cek_nik" target="_blank" class="btn btn-warning rounded-pill lbtn">Cek NIK</a>
         </div>
       </div>
+
       <!-- Pengumuman Button -->
-      <!-- <div class="row mt-2">
+      <div class="row mt-4">
         <div class="col-lg">
-          <a href="" target="_blank" class="btn btn-primary rounded-pill llbtn">PENGUMUMAN HASIL PPDB SMAN / SMKN DIY</a>
+          <a href="#" target="_blank" class="btn btn-primary rounded-pill llbtn">Pengumuman Hasil PPDB</a>
         </div>
-      </div> -->
       </div>
+    </div>
 
       <div class="container mt-5">
       <div class="row mt-4">
