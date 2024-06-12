@@ -131,6 +131,23 @@
 .perka:hover {
   background-color: #cb6c18 !important;
 }
+.pos {
+  width: 100%;
+  background-color: #fa2b2b;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+.pos > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.pos:hover {
+  background-color: #910303 !important;
+}
 #overlay {
   position: fixed;
   top: 0;
