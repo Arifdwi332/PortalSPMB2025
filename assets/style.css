@@ -1,59 +1,178 @@
 * {
-    font-family: "Poppins", sans-serif;
-  }
-  .card {
-    border: 1.5px solid rgba(0, 0, 0, 0.4);
-    margin-top: 20px;
-    height: fixed;
-  } 
-  .divider {
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.4);
-    margin: 3rem 0;
-  }
-  .llbtn {
-    font-size: 1.02rem;
-  }
-  .lnav {
-    width: 100%;
-    height: 80px;
-    background-color: white;
-    box-shadow: 0 0.2px 4px rgb(197, 197, 197);
-    position: fixed;
-    z-index: 1;
-    top: 0;
-  }
-  .lhead {
-    margin-left: -10px;
-  }
-  .lbrand {
-    color:black;
-    font-weight: 700;
-    font-size: 1.4rem;
-  }
-  .spacing-nav {
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-  }
-  .lbody {
-    padding: 1 1rem;
-  }
-  .limg {
-    margin-top: -10px;
-  }
-  .lpar {
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-  .ltext {
+  font-family: "Poppins", sans-serif;
+}
+.custom-card {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 16px;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.list-group-item {
+    border: none;
     font-size: 1rem;
+    text-align: left;
+}
+  .btn-lg {
+    padding: 12px 25px;
+}
+.btn-primary, .btn-danger {
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #004085;
+}
+  .btn-danger:hover {
+    background-color: #b71c1c;
+}
+.layanan-custom-card {
+    background-color: #FFD600;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    color: #000000;
+}
+
+.layanan-custom-card:hover {
+    border-color: #FB7B40;
+    transform: translateY(-5px);
+}
+
+.layanan-custom-card h5 {
+    font-weight: bold;
+    color : inherit;
+    text-decoration: none;
+}
+
+.layanan-custom-card a {
+    color: inherit;
+    text-decoration: none;
+}
+  .announcement-card {
+    background-color: #fff9db;
+    border-left: 6px solid #f4c430;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease;
   }
-  .btn {
-    padding: 10px 20px 10px 20px;
-    box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+
+  .announcement-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   }
-  .juknis {
+
+  .announcement-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .announcement-text {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  .table-custom {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+
+  .table-custom thead th {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .table-custom tbody tr {
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .table-custom tbody tr:hover {
+    background-color: #e2edff;
+  }
+
+  .table-custom td, .table-custom th {
+    padding: 16px;
+    vertical-align: top;
+  }
+
+  .table-custom td:first-child {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .table-custom a {
+    color: #007bff;
+    font-weight: 500;
+  }
+
+  .title-section2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  }
+.llbtn {
+  font-size: 1.02rem;
+}
+.lnav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0 0.2px 4px rgb(197, 197, 197);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.lhead {
+  margin-left: -10px;
+}
+.lbrand {
+  color: black;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.spacing-nav {
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+}
+.lbody {
+  padding: 1 1rem;
+}
+.limg {
+  margin-top: -10px;
+}
+.lpar {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.ltext {
+  font-size: 1rem;
+}
+.btn {
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+.juknis {
   width: 100%;
   background-color: #ffd700;
   margin-left: auto;
@@ -63,6 +182,13 @@
   border-radius: 20px;
   margin-bottom: 1rem;
   box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+.pergub, .perka, .juknis, .pos, .kepka {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .juknis:hover {
   background-color: #c0ad04 !important;
@@ -154,44 +280,49 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Nilai alpha (0.5) dapat disesuaikan untuk transparansi yang diinginkan */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Nilai alpha (0.5) dapat disesuaikan untuk transparansi yang diinginkan */
   z-index: 1; /* Pastikan nilai z-index lebih tinggi dari pop-up modal */
   display: none;
 }
 
-  @media (min-width: 576px) { 
-    .lpar {
-        font-weight: 600;
-        font-size: 1.8rem;
-      }
-    .lbrand {
-      color:black;
-      font-weight: 700;
-      font-size: 1.8rem;
-      }
-    .card {
-      border: 1.5px solid rgba(0, 0, 0, 0.4);
-      margin-top: 20px;
-       height: 35rem;
-      }
-    .lhead {
-        margin-left: 0px;
-      } 
-   }
-   @media (min-width: 1200px) { 
-    .butt {
-      margin-top: 53px;
-    }
-    .butt2 {
-      margin-top: 50px;
-    }
-    }
-   @media (min-width: 1400px) { 
-    .butt {
-      margin-top: 105px;
-    }
-    .butt2 {
-      margin-top: 83px;
-    }
-    }
-   
+@media (min-width: 576px) {
+  .lpar {
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .lbrand {
+    color: black;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .card {
+    margin-top: 20px;
+    height: 45rem;
+  }   
+  .lhead {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .butt {
+    margin-top: 53px;
+  }
+  .butt2 {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .butt {
+    margin-top: 105px;
+  }
+  .butt2 {
+    margin-top: 83px;
+  }
+}

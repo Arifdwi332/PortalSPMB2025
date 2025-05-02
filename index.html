@@ -8,32 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-`
-    <script>
-      window.onload = function() {
-        var modal = document.getElementById("myModal");
-        var overlay = document.getElementById("overlay");
-        var closeButton = document.getElementById("closeButton");
-    
-        closeButton.addEventListener("click", function() {
-          modal.style.display = "none";
-          overlay.style.display = "none";
-        });
-    
-        modal.style.display = "block";
-        overlay.style.display = "block";
-      };
-    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZVVJ880B5"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-JZVVJ880B5');
-    </script>   
+        gtag('config', 'G-JZVVJ880B5');
+    </script>  
+    
+    <script>
+      window.onload = function () {
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+        myModal.show();
+      };
+    </script>
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -41,15 +32,15 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
-    <title>PPDB</title>
+    <title>SPMB</title>
     <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/android-icon-192x192.png">
     <link rel="manifest" href="assets/img/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
   </head>
   <body>
     <!-- navbar -->
@@ -66,147 +57,169 @@
     <div class="spacing-nav"></div>
 
     <!-- Modal Popup -->
-    <!-- <div class="modal" id="myModal" tabindex="3" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title fw-bold" id="myModalLabel">Pengumuman</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeButton"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Tombol close -->
           </div>
           <div class="modal-body m-1">
             <p style="font-size: 14px;">
-              Pengumuman Hasil Seleksi Tahap Pemenuhan Daya Tampung
-              <br><br>
-             <a href="https://drive.google.com/file/d/1Prr3Lupw4hHcnG3P5OtX1okEPxDRtDMw/view?usp=sharing" target="_blank" style="text-decoration: none;"><b>Hasil Tahap Pemenuhan Daya Tampung SMAN SMKN</b></a>
-             <br><br>
-             Daftar Ulang bagi Calon Peserta Didik yang diterima pada Tahap Pemenuhan Daya Tampung dilaksanakan pada hari <b>Senin tanggal 8 Juli 2024 pukul 08.00 s.d. 14.30 WIB</b> di masing-masing SMAN dan SMKN.
+              Selamat datang di laman Seleksi Penerimaan Murid Baru SMAN dan SMKN di DIY Tahun 2025!
+              <br>
+              Laman ini akan dibuka pada tanggal <b>8 Mei 2025</b>.
             </p>
+            <a href="https://drive.google.com/file/d/1a00DaBGFKTebYjmdp0ly3EiJ_AXmKwbW/view?usp=sharing" target="_blank" class="btn btn-primary rounded">KEPGUB SPMB 2025</a>
           </div>
         </div>
       </div>
     </div>
-    <div id="overlay"></div> -->
-
-    <!-- Modal Button Target -->
-      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-4" id="exampleModalLabel">Pemberitahuan</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p style="font-size: 20px;"><b>Cek NIK</b> dan <b>Pengajuan Perubahan Data Kependudukan</b> akan dibuka mulai tanggal <span class="fw-bold" style="color: red;">23 Mei 2024</span></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    <div id="overlay"></div>
 
     <!-- content -->
     <div class="container mt-5">
       <div class="row">
-        <p class="lpar">PENERIMAAN PESERTA DIDIK BARU <br>SMA DAN SMK NEGERI DI DIY<br>TAHUN 2024</p>
+        <p class="lpar">SISTEM PENERIMAAN MURID BARU<br>SMA DAN SMK NEGERI DI DIY<br>TAHUN 2025</p>
       </div>
       <div class="row mt-2">
-        <div class="col-sm">
-          <a href="pergubjuknis.html" class="btn btn-primary rounded-pill lbtn">Peraturan PPDB</a>
-          <a href="#jadwal" class="btn btn-primary rounded-pill lbtn m-2">Jadwal</a>
-          <!-- <a href="http://verifikasi-ppdb.jogjaprov.go.id/landing/cek_nik" target="_blank" class="btn btn-warning rounded-pill lbtn">Cek NIK</a> -->
-          <a href="#" class="btn btn-warning rounded-pill lbtn">Cek NIK</a>
-          <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-warning rounded-pill lbtn">Cek NIK</button> -->
+        <div class="col-sm text-center">
+          <a href="pergubjuknis.html" class="btn btn-primary rounded lbtn">Peraturan SPMB 2025</a>
+          <a href="#jadwal" class="btn btn-primary rounded lbtn m-2">Jadwal</a>
+          <!-- <a href="https://drive.google.com/file/d/1AuZprcuKsQtHvSF2qe8abssd5_RC1osX/view?usp=sharing" target="_blank" class="btn btn-primary rounded llbtn">Pengumuman Hasil PPDB</a> -->
         </div>
       </div>
 
-      <!-- Pengumuman Button -->
-      <!-- <div class="row mt-4">
-        <div class="col-lg">
-          <a href="https://drive.google.com/file/d/1AuZprcuKsQtHvSF2qe8abssd5_RC1osX/view?usp=sharing" target="_blank" class="btn btn-primary rounded-pill llbtn">Pengumuman Hasil PPDB</a>
-        </div>
-      </div>
-    </div> -->
-
-      <div class="container mt-5">
-      <div class="row mt-4">
-        <div class="col-lg">
-          <div class="card p-3 lbord"> 
-            <div class="card-body">
-              <h5 class="card-title text-center fw-bold">TAHAP VERIFIKASI</h5>
-              <p class="card-text ltext mt-5">
-                KHUSUS bagi Calon Peserta Didik yang memerlukan: <br><br>
-                1. <b>INPUT DATA</b> Siswa Lulusan Luar DIY dan Lulusan Dalam DIY sebelum Th 2024 <br>
-                2. <b>CEK NIK & Pengajuan Perubahan Data Kependudukan</b><br>
-                3. <b>PENDATAAN RADIUS</b><br>
-                4. Verifikasi <b>JALUR AFIRMASI</b> <br>  
-                5. Verifikasi <b>PENAMBAHAN NILAI PRESTASI NON AKADEMIK</b> <br>
-                6. Verifikasi <b>JALUR PERPINDAHAN TUGAS ORANG TUA/WALI</b>
-              </p>
-              <div class="row justify-content-center butt2">
-                <a href="#" class="btn btn-warning rounded-pill fw-bold mt-5">Masuk APLIKASI VERIFIKASI</a> 
-                <!-- <a href="http://verifikasi-ppdb.jogjaprov.go.id" target="_blank" class="btn btn-warning rounded-pill fw-bold mt-5">Masuk APLIKASI VERIFIKASI</a>  -->
-                <!-- <a class="btn rounded-pill fw-bold mt-5" style="
-                  background-color: rgb(161, 161, 161);
-                  color:#fff;
-                  box-shadow: none;
-                ">Masuk APLIKASI VERIFIKASI</a> -->
-              </div>
-            </div>
+<!-- Layanan Pengecekan -->
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
+    <!-- Card 1: Cek NIK -->
+    <div class="col">
+      <a href="oops.html" target="_blank" class="text-decoration-none">
+        <div class="card layanan-custom-card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cek NIK</h5>
+            <p class="card-text">
+              Khusus bagi calon murid yang berdomisili di dalam DIY dan memiliki Kartu Keluarga DIY sesuai dengan ketentuan yang berlaku.
+            </p>
           </div>
         </div>
-        <div class="col-lg">
-          <div class="card p-3"> 
-            <div class="card-body">
-              <h5 class="card-title text-center fw-bold">TAHAP PENDAFTARAN DAN SELEKSI ONLINE</h5>
-              <p class="card-text ltext mt-5">
-                1. <b>AJUAN AKUN,</b> 13 - 21 Juni <br>
-                2. <b>SELEKSI JALUR ZONASI RADIUS, JALUR AFIRMASI, dan JALUR PTO</b> 24 - 25 Juni <br>
-                3. <b>SELEKSI JALUR ZONASI REGULER, dan JALUR PRESTASI</b> 26 - 27 Juni <br>
-                4. <b>Pengumuman,</b> 28 Juni <br>
-                5. <b>Daftar Ulang,</b> 1 - 3 Juli <br>
-                6. <b>Pendaftaran dan Seleksi Pemenuhan Daya Tampung Sekolah,</b> 4 - 5 Juli <br>
-                <br>
-                Tahap ini WAJIB diikuti seluruh Peserta PPDB Online
-              </p>
-              <div class="row justify-content-center butt">
-                <a href="http://yogyaprov.siap-ppdb.com" target="_blank" class="btn btn-danger rounded-pill fw-bold">SELEKSI PPDB ONLINE</a>
-              </div>
-            </div>
+      </a>
+    </div>
+
+    <!-- Card 2: Cek Nilai Raport -->
+    <div class="col">
+      <a href="oops.html" target="_blank" class="text-decoration-none">
+        <div class="card layanan-custom-card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cek Nilai Raport</h5>
+            <p class="card-text">
+              Khusus bagi calon murid lulusan SMP/MTS/sederajat dalam DIY pada tahun 2025.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 3: Cek Status Afirmasi -->
+    <div class="col">
+      <a href="oops.html" target="_blank" class="text-decoration-none">
+        <div class="card layanan-custom-card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cek Status Afirmasi</h5>
+            <p class="card-text">
+              Khusus bagi calon murid yang berasal dari keluarga tidak mampu dan terdaftar dalam program penanganan kesejahteraan sosial dari Dinas Sosial Kab/Kota dan Kementerian Sosial RI.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+    <div class="container mt-5">
+  <div class="row mt-4">
+    <div class="col-lg d-flex">
+      <div class="card custom-card p-4 w-100 d-flex flex-column"> 
+        <div class="card-body d-flex flex-column text-center">
+          <h4 class="card-title fw-bold text-primary">TAHAP VERIFIKASI</h4>
+          <p class="card-text mt-4">
+            <span class="badge bg-info text-dark">Khusus bagi calon murid yang membutuhkan</span>
+          </p>
+          <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item">📅 <b>PENDAFTARAN ASPD</b> Bagi Calon Murid Lulusan Luar DIY</li>
+            <li class="list-group-item">📅 <b>INPUT DATA</b> Calon Murid Lulusan Luar DIY & Lulusan Dalam DIY Sebelum th 2025</li>
+            <li class="list-group-item">📅 <b>CEK NIK, CEK NILAI RAPOR, CEK STATUS AFIRMASI</b></li>
+            <li class="list-group-item">📅 <b>PENDATAAN RADIUS</b></li>
+            <li class="list-group-item">📅 Verifikasi <b>JALUR AFIRMASI</b></li>
+            <li class="list-group-item">📅 Verifikasi <b>PENAMBAHAN NILAI PRESTASI</b></li>
+            <li class="list-group-item">📅 Verifikasi <b>JALUR MUTASI</b></li>
+          </ul>
+          <div class="mt-auto">
+            <a href="#" class="btn btn-primary rounded-pill fw-bold mt-4 shadow-sm btn-lg disabled">Masuk APLIKASI VERIFIKASI</a>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="col-lg d-flex">
+      <div class="card custom-card p-4 w-100 d-flex flex-column"> 
+        <div class="card-body d-flex flex-column text-center">
+          <h4 class="card-title fw-bold text-danger">TAHAP PENDAFTARAN & SELEKSI</h4>
+          <p class="card-text mt-4">
+            <span class="badge bg-warning text-dark">Wajib bagi seluruh peserta SPMB Online</span>
+          </p>
+          <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item">📅 <b>AJUAN AKUN:</b> 18 - 23 Juni</li>
+            <li class="list-group-item">📅 <b>Seleksi JALUR DOMISILI RADIUS, AFIRMASI, MUTASI DAN PRESTASI:</b> 25 - 26 Juni</li>
+            <li class="list-group-item">📅 <b>Seleksi JALUR DOMISILI WILAYAH:</b> 30 Juni - 1 Juli</li>
+            <li class="list-group-item">📅 <b>Pengumuman:</b> 2 Juli</li>
+            <li class="list-group-item">📅 <b>Daftar Ulang:</b> 2 - 4 Juli</li>
+            <li class="list-group-item">📅 <b>Seleksi Calon Murid Cadangan</b> 7 - 8 Juli</li>
+            <li class="list-group-item">📅 <b>Pengumuman Hasil Seleksi Calon Murid Cadangan:</b> 8 Juli</li>
+            <li class="list-group-item">📅 <b>Daftar Ulang Murid Cadangann:</b> 9 Juli</li>
+          </ul>
+          <div class="mt-auto">
+            <a href="http://yogyaprov.siap-ppdb.com" target="_blank" class="btn btn-danger rounded-pill fw-bold mt-4 shadow-sm btn-lg disabled">SELEKSI PPDB ONLINE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- Pengumuman -->
-      <div class="divider"></div>
-      <div class="container mt-1">
-      <div class="lbody">
-        <div class="row mb-4">
-            <div class="col-8 col-lg-11">
-                <h4>Pengumuman</h4>
-            </div>
+<div class="container mt-5 mb-2">
+  <div class="row mb-3">
+    <div class="col-12">
+      <div class="announcement-card">
+        <div class="d-flex align-items-center mb-3">
+          <span style="font-size: 1.8rem; margin-right: 10px;">📢</span>
+          <h4 class="announcement-title mb-0">Pengumuman</h4>
         </div>
-        <div class="row">
-            <div class="col">
-                <div>
-                  <p>
-                    CEK NIK wajib dilakukan oleh seluruh Calon Peserta Didik yang berdomisili di dalam DIY 
-                    untuk memastikan status data kependudukan sesuai peraturan PPDB yang berlaku, yaitu alamat 
-                    domisili berdasarkan KK yang terbit satu tahun sebelum pelaksanaan PPDB Online.
-                  </p>
-                </div>
-            </div>
-        </div>
-     </div>
+        <p class="announcement-text">
+          <b>CEK NIK</b> wajib dilakukan oleh seluruh Calon Murid yang berdomisili di dalam DIY
+          untuk memastikan status data kependudukan sesuai peraturan SPMB yang berlaku, yaitu alamat
+          domisili berdasarkan KK yang terbit satu tahun sebelum pelaksanaan <b>SPMB Online</b>.
+          <br><br>
+          <b>CEK NILAI RAPOR</b> wajib dilakukan oleh calon murid lulusan SMP/MTS/sederajat 
+          dalam DIY untuk memastikan nilai sesuai dengan rapor yang sah yang diterbitkan oleh sekolah.
+          <br><br>
+          <b>CEK STATUS AFIRMASI</b> perlu dilakukan calon murid yang berasal dari keluarga dengan ekonomi 
+          kurang/tidak mampu untuk memastikan apakah statusnya telah terdaftar sebagai "YA".
+        </p>
+      </div>
     </div>
-    <div class="divider"></div>
-      <!-- end pengumuman -->
+  </div>
+</div>
+<!-- End Pengumuman -->
 
       <!-- table -->
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
       <div class="main-content">
-        <div class="mt-5" id="jadwal">
+        <div class="mt-5 text-center" id="jadwal">
           <h3 class="title-section2">Jadwal</h3>
         </div>
       
@@ -214,7 +227,7 @@
           <div class="row">
             <div class="col">
               <div class="table-responsive">
-                <table class="table table-bordered">
+                <table class="table table-custom">
                   <thead>
                     <tr>
                       <th style="width: 5%">Nomor</th>
@@ -228,17 +241,21 @@
                     <tr>
                       <td>1.</td>
                       <td>
-                        <p>Pendaftaran ASPD bagi calon peserta didik baru luar DIY dan lulusan sebelum tahun 2023</p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Senin s.d Jumat, <br>
-                          15 s.d 24 Mei <br>
-                          2024
+                        <p><b>ASPD</b><br>
+                          (khusus bagi lulusan SMP/MTS/sederajat luar DIY)
                         </p>
                       </td>
                       <td>
-                        <p>Dilaksanakan secara dalam jaringan/<i>online</i> di alamat <br>
-                          <a href="https://aspd.jogjacbt.web.id/" class="fw-bold" style="text-decoration: none;" target="_blank">aspd.jogjacbt.web.id</a> 
+                        <p style="text-align: center;">
+                          <b>Pendaftaran: </b> <br>
+                          8 s.d. 16 Mei 2025<br>
+                          <b>Pelaksanaan: </b> <br>
+                          27 dan 28 Mei 2025
+                        </p>
+                      </td>
+                      <td>
+                        <p><i>Online</i> di
+                          <a href="https://spmb.jogjaprov.go.id/" class="fw-bold" style="text-decoration: none;" target="_blank">spmb.jogjaprov.go.id</a> 
                         </p>
                       </td>
                     </tr>
@@ -247,16 +264,20 @@
                     <tr>
                       <td>2.</td>
                       <td>
-                        <p>Pelaksanaan ASPD bagi calon peserta didik baru luar DIY dan lulusan sebelum tahun 2023</p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Kamis dan Jumat, <br>
-                          30 s.d 31 Mei <br>
-                          2024
+                        <p>
+                          <b>Input Data</b> <br>
+                          Khusus bagi calon murid Lulusan Luar DIY dan calon murid Lulusan Dalam DIY Sebelum Th 2025
                         </p>
                       </td>
                       <td>
-                        <p>Dilaksanakan di sekolah yang ditunjuk</p>
+                        <p style="text-align: center;">
+                          8 s.d. 16 Mei 2025
+                        </p>
+                      </td>
+                      <td>
+                        <p><i>Online</i> di
+                          <a href="https://spmb.jogjaprov.go.id/" class="fw-bold" style="text-decoration: none;" target="_blank">spmb.jogjaprov.go.id</a> 
+                        </p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -264,25 +285,29 @@
                     <tr>
                       <td>3.</td>
                       <td>
-                        <p><span class="fw-bold">Input data calon peserta didik  lulusan luar DIY </span>dan calon peserta didik baru lulusan dalam DIY sebelum tahun 2023</p>
+                        <p><b>Pengecekan Data:</b></p>
+                        <ol type="1">
+                          <li><b>Cek NIK</b>
+                            <ol type="a">
+                              <li>Wajib bagi seluruh calon murid.</li>
+                              <li>Jika calon murid tidak berada dalam satu KK dengan orang tua kandung, segera lakukan pengajuan perubahan data kependudukan (kembali ke KK orang tua kandung).</li>
+                            </ol>
+                          </li>
+                          <li><b>Cek Data Rapor</b><br>
+                            Khusus bagi calon murid lulusan SMP/MTS/sederajat dalam DIY tahun 2025.
+                          </li>
+                          <li><b>Cek Status Afirmasi</b><br>
+                            Khusus bagi calon murid yang berasal dari keluarga tidak mampu dan terdaftar dalam program penanganan kesejahteraan sosial dari Dinas Sosial Kab/Kota dan Kementerian Sosial RI.
+                          </li>
+                        </ol>
+                      </td>
                       <td>
-                        <p style="text-align: center;">Senin s.d. Kamis, <br>
-                          20 Mei s.d 6 Juni <br>
-                          2024
+                        <p style="text-align: center;">
+                          26 Mei s.d. 5 Juni 2025
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                          <li>
-                            <p>Dibuka pada tanggal 20 Mei 2024 pukul 08.00 WIB dan ditutup pada tanggal 6 Juni 2024 pukul 15.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a></p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -290,29 +315,24 @@
                     <tr>
                       <td>4.</td>
                       <td>
-                        <p><span class="fw-bold">Pengecekan data kependudukan calon peserta didik baru</span> dan pengurusan data kependudukan yang bermasalah (Cek NIK).<br><br>
-                          Jika calon peserta didik <b>tidak berada dalam satu KK</b> dengan orang tua/wali, segera lakukan pengajuan perubahan data kependudukan (kembali ke KK orang tua/wali), melalui laman Aplikasi Verifikasi.</p>
+                        <p><b>Verifikasi Dokumen</b><br>
+                        <span style="text-transform: uppercase;">KHUSUS bagi yang memerlukan proses pengurusan surat rekomendasi:</span>
+                        </p>
+                        <ol type="1">
+                          <li><b>Jalur Afirmasi</b> (Keluarga Tidak Mampu), khusus bagi calon murid yang hasil Cek Status Afirmasinya: TIDAK, namun memiliki bukti afirmasi yang sah.</li>
+                          <li><b>Jalur Mutasi Orang Tua/Wali</b></li>
+                          <li><b>Penambahan Nilai Prestasi</b></li>
+                        </ol>
                       </td>
                       <td>
-                        <p style="text-align: center;">Rabu s.d. Kamis, <br>
-                          22 Mei s.d 6 Juni <br>
-                          2024
+                        <p style="text-align: center;">
+                          10 s.d. 13 Juni <br>
+                          (ditutup 13 Juni pukul 11.00 WIB) <br>
+                          2025
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Pengecekan NIK dan pengajuan perubahan data kependudukan calon peserta didik baru melalui laman 
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 22 Mei 2024 pukul 08.00 WIB dan ditutup pada tanggal 6 Juni 2024 pukul 15.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a></p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -320,28 +340,19 @@
                     <tr>
                       <td>5.</td>
                       <td>
-                        <p>Verifikasi dokumen Jalur Afirmasi <span class="fw-bold">(Khusus Jalur Afirmasi)</span></p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Senin s.d. Kamis, <br>
-                          3 s.d 6 Juni <br>
-                          2024
+                        <p><b>Pendataan Radius Tempat Tinggal</b><br>
+                          (Khusus calon murid yang bertempat tinggal dalam radius sekolah tujuan)
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 3 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 6 Juni 2024 pukul 15.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p style="text-align: center;">
+                          10 s.d. 13 Juni <br>
+                          (ditutup 13 Juni pukul 11.00 WIB) <br>
+                          2025
+                        </p>
+                      </td>
+                      <td>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a></p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -349,28 +360,17 @@
                     <tr>
                       <td>6.</td>
                       <td>
-                        <p>Verifikasi dokumen perpindahan tugas orangtua/wali <span class="fw-bold">(Khusus Jalur Perpindahan Tugas Orangtua/Wali)</span></p>
+                        <p><b>Ajuan Akun dan Aktivasi PIN/TOKEN</b></p>
                       </td>
                       <td>
-                        <p style="text-align: center;">Senin s.d. Kamis, <br>
-                          3 s.d 6 Juni <br>
-                          2024
+                        <p style="text-align: center;">
+                          18 s.d. 23 Juni <br>
+                          (ditutup 23 Juni pukul 12.00 WIB) <br>
+                          2025
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 3 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 6 Juni 2024 pukul 15.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a></p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -378,28 +378,23 @@
                     <tr>
                       <td>7.</td>
                       <td>
-                        <p>Verifikasi dokumen <span class="fw-bold">penambahan nilai prestasi non akademik </span></p>
+                        <p><b>Pendaftaran & Seleksi SPMB Reguler:</b></p>
+                        <ol type="1">
+                          <li>Jalur Domisili Radius</li>
+                          <li>Jalur Afirmasi</li>
+                          <li>Jalur Mutasi</li>
+                          <li>Jalur Prestasi</li>
+                        </ol>
                       </td>
                       <td>
-                        <p style="text-align: center;">Senin s.d. Kamis, <br>
-                          3 s.d 6 Juni <br>
-                          2024
+                        <p style="text-align: center;">
+                          25 s.d. 26 Juni <br>
+                          (ditutup 26 Juni pukul 16.00 WIB) <br>
+                          2025
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 3 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 6 Juni 2024 pukul 15.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a></p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -407,28 +402,20 @@
                     <tr>
                       <td>8.</td>
                       <td>
-                        <p><span class="fw-bold">Pendataan dan Verifikasi Radius Tempat Tinggal  </span>Calon Peserta Didik baru (Khusus bagi calon peserta didik baru yang bertempat tinggal dalam radius sekolah tujuan sesuai ketentuan)</p>
+                        <p><b>Pendaftaran & Seleksi SPMB Reguler:</b></p>
+                        <ol type="1">
+                          <li>Jalur Domisili Wilayah</li>
+                        </ol>
                       </td>
                       <td>
-                        <p style="text-align: center;">Senin s.d. Kamis, <br>
-                          3 s.d 6 Juni <br>
-                          2024
+                        <p style="text-align: center;">
+                          30 Juni s.d. 1 Juli <br>
+                          (ditutup 1 Juli pukul 16.00 WIB) <br>
+                          2025
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 3 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 6 Juni 2024 pukul 15.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a></p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -436,202 +423,49 @@
                     <tr>
                       <td>9.</td>
                       <td>
-                        <p>Ajuan Akun dan Aktivasi PIN/TOKEN</p>
+                        <p><b>Pengumuman</b></p>
                       </td>
                       <td>
-                        <p style="text-align: center;">Kamis s.d Jumat, <br>
-                          13 s.d. 21 Juni <br>
-                          2024
+                        <p style="text-align: center;">
+                          2 Juli 2024
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 13 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 21 Juni 2024 pukul 12.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a> dan di masing-masing Sekolah</p>
                       </td>
                     </tr>
                     <!-- end colum -->
                     <!-- start column -->
                     <tr>
-                      <td rowspan="3">10.</td>
+                      <td>10.</td>
                       <td>
-                        <p>Pendaftaran dan Seleksi PPDB Sekolah Reguler: </p>
-                          <ul>
-                            <li>
-                              <span class="fw-bold">Jalur Zonasi Radius</span>
-                            </li>
-                            <li>
-                              <span class="fw-bold">Jalur Afirmasi</span>
-                            </li>
-                            <li>
-                              <span class="fw-bold">Jalur Perpindahan Tugas Orang Tua/Wali</span>
-                            </li>
-                          </ul> 
+                        <p><b>Daftar Ulang</b></p>
                       </td>
                       <td>
-                        <p style="text-align: center;">Senin s.d Selasa, <br>
-                          24 s.d. 25 Juni <br>
+                        <p style="text-align: center;">
+                          2 s.d. 4 Juli <br>
                           2024
                         </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 24 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 25 Juni 2024 pukul 16.00 WIB
-                            </p>
-                          </li>
-                        </ul>
+                        <p>Di masing-masing Sekolah</p>
                       </td>
                     </tr>
                     <!-- end colum -->
                     <!-- start column -->
                     <tr>
+                      <td>11.</td>
                       <td>
-                        <p>- perubahan pilihan jenis sekolah SMA ke SMK atau sebaliknya<br>
-                          -	perubahan pilihan sekolah atau kompetensi keahlian<br>
-                          -	perubahan pilihan Jalur PPDB (antara radius, Afirmasi, dan Perpindahan Tugas Orang Tua/Wali)
+                        <p><b>Seleksi Calon Murid Cadangan</b></p>
+                      </td>
+                      <td>
+                        <p style="text-align: center;">
+                          7 s.d. 8 Juli <br>
+                          2025
                         </p>
                       </td>
                       <td>
-                        <p style="text-align: center;">Senin s.d. Selasa, <br>
-                          24 s.d. 25 Juni <br>
-                          2024
-                        </p>
-                      </td>
-                      <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 24 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 25 Juni 2024 pukul 15.59 WIB
-                            </p>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p>- pemberhentian proses seleksi online</p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Selasa, 25 Juni 2024 <br>pukul 16.00 WIB 
-                        </p>
-                      </td>
-                      <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Calon peserta didik baru yang dinyatakan <b>telah diterima</b> di Jalur Zonasi Radius, Jalur Afirmasi, 
-                              atau Jalur Perpindahan Tugas Orang Tua/Wali pada tanggal 25 Juni 2024 pukul 16.00 WIB <b>tidak diperbolehkan membatalkan 
-                              pendaftarannya</b> untuk mengikuti PPDB di Jalur Zonasi Reguler dan/atau Jalur Prestasi.
-                            </p>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td rowspan="3">11.</td>
-                      <td>
-                        <p>Pendaftaran dan Seleksi PPDB Sekolah Reguler: </p>
-                        <ul>
-                          <li><span class="fw-bold">Jalur Zonasi Reguler</span></li>
-                        </ul>
-                        <ul>
-                          <li><span class="fw-bold">Jalur Prestasi</span></li>
-                        </ul>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Rabu s.d. Kamis, <br>
-                          26 s.d. 27 Juni <br>
-                          2024 <br>
-                        </p>
-                      </td>
-                      <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 26 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 27 Juni 2024 pukul 16.00 WIB
-                            </p>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p>- perubahan pilihan jenis sekolah SMA ke SMK atau sebaliknya <br>
-                          -	perubahan pilihan sekolah atau kompetensi keahlian <br>
-                          -	perubahan pilihan Jalur PPDB (antara Zonasi Reguler dan Prestasi)
-                        </p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Rabu s.d. Kamis, <br>
-                          26 s.d 27 Juni 2024 <br>
-                        </p>
-                      </td>
-                      <td>
-                        <ul>
-                          <li>
-                            <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                              <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                            </p>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <p>Dibuka pada tanggal 26 Juni 2024 pukul 08.00 WIB dan ditutup pada tanggal 27 Juni 2024 pukul 15.59 WIB
-                            </p>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p>-	pemberhentian proses seleksi online </p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Kamis, 27 Juni <br>
-                          2024 pukul<br>
-                          16.00 WIB
-                        </p>
-                      </td>
-                      <td>
-                        <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                          <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                        </p>
+                        <p><i>Online</i> di <a href="https://spmb.jogjaprov.go.id" style="text-decoration: none; font-weight: bold;">spmb.jogjaprov.go.id</a></p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -639,15 +473,17 @@
                     <tr>
                       <td>12.</td>
                       <td>
-                        <p>Pengumuman</p>
+                        <p><b>Pengumuman Hasil Seleksi Calon Murid Cadangan</b></p>
                       </td>
-                      <td>
-                        <p style="text-align: center;">Jumat, 28 Juni <br>
+                      <td style="text-align: center;">
+                        <p>
+                          8 Juli<br>
+                          pukul 15.00 WIB<br>
                           2024
                         </p>
                       </td>
                       <td>
-                        <p>Pukul 10.00 WIB di sekolah masing-masing</p>
+                        <p>Di masing-masing Sekolah</p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -655,89 +491,16 @@
                     <tr>
                       <td>13.</td>
                       <td>
-                        <p>Daftar Ulang</p>
+                        <p><b>Daftar Ulang Murid Cadangan</b></p>
                       </td>
-                      <td>
-                        <p style="text-align: center;">Senin, Selasa, dan Rabu <br>
-                          1 s.d 3 Juli 2024
-                        </p>
-                      </td>
-                      <td>
-                        <ul>
-                          <li>
-                            Senin – Selasa (1 s.d 2 Juli 2024): <br>
-                            Pukul 08.00 –14.30 WIB
-                          </li>
-                          <li>
-                            Rabu, 3 Juli 2024:<br> 
-                            pukul 08.00 – 12.00 WIB 
-                          </li>
-                        </ul>
-                        <p>di sekolah masing-masing</p>
-                      </td>
-                    </tr>
-                    <!-- end colum -->
-                    <!-- start column -->
-                    <tr>
-                      <td>14.</td>
-                      <td>
-                        <p>Pengumuman Daya Tampung Sekolah yang belum terisi</p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Rabu, 3 Juli <br>
+                      <td style="text-align: center;">
+                        <p>
+                          9 Juli<br>
                           2024
                         </p>
                       </td>
                       <td>
-                        <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                          <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                        </p>
-                      </td>
-                    </tr>
-                    <!-- end colum -->
-                    <!-- start column -->
-                    <tr>
-                      <td>15.</td>
-                      <td>
-                        <p>Pendaftaran dan Seleksi untuk pemenuhan daya tampung sekolah</p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Kamis, 4 Juli 2024 <br>
-                          pukul 08.00 WIB s.d. <br>
-                          Jumat, 5 Juli 2024 <br>
-                          pukul 11.00 WIB
-                        </p>
-                      </td>
-                      <td>
-                        <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                          <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>16.</td>
-                      <td>
-                        <p>Pengumuman hasil Seleksi untuk pemenuhan daya tampung sekolah</p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Jumat, 5 Juli 2024 <br>pukul 14.00 WIB</p>
-                      </td>
-                      <td>
-                        <p>Dilaksanakan secara dalam jaringan/<i>online</i> di laman
-                          <a href="https://ppdb.jogjaprov.go.id/" style="text-decoration: none;">ppdb.jogjaprov.go.id</a>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>17.</td>
-                      <td>
-                        <p>Daftar Ulang (bagi calon peserta didik baru yang diterima pada tahap pemenuhan daya tampung sekolah)</p>
-                      </td>
-                      <td>
-                        <p style="text-align: center;">Senin, 8 Juli 2024 <br> pukul 08.00 s.d <br> 14.00 WIB</p>
-                      </td>
-                      <td>
-                        <p>Dilaksanakan di sekolah masing-masing</p>
+                        <p>Di masing-masing Sekolah</p>
                       </td>
                     </tr>
                     <!-- end colum -->
@@ -747,73 +510,13 @@
             </div>
           </div>
         </div>
-        <!-- <div class="lbody bubble-? mt-3">
-          <h3 class="title-section2">JADWAL PPDB KELAS INKLUSI</h3>
-          <div class="row">
-            <div class="col">
-              <div class="table-responsive">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th style="width: 50px">Nomor</th>
-                      <th style="width: 500px;">Proses</th>
-                      <th style="width: 500px;">Waktu & Tempat</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>
-                        <p>Pendaftaran</p>
-                      </td>
-                      <td>
-                        Di masing-masing SMA/SMK NEGERI <br>
-                        8 s.d. 10 Juni
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>
-                        Seleksi
-                      </td>
-                      <td>
-                        Di masing-masing SMA/SMK NEGERI <br>
-                        13 Juni
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>
-                        Pengumuman
-                      </td>
-                      <td>
-                        Di masing-masing SMA/SMK NEGERI <br>
-                        14 Juni
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>
-                        Daftar Ulang
-                      </td>
-                      <td>
-                        Di masing-masing SMA/SMK NEGERI <br>
-                        1,4,5 dan 6 Juli
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
     <footer>
       <div class="container-fluid bg-light mt-2">
           <div class="row">
               <div class="col">
-                  <p class="textfoot text-center mt-3">SIVERI PPDB 2024 DINAS PENDIDIKAN PEMUDA DAN OLAHRAGA DIY </p>
+                  <p class="textfoot text-center mt-3">SIVERI SPMB 2025 DINAS PENDIDIKAN PEMUDA DAN OLAHRAGA DIY </p>
               </div>
           </div>
       </div>
